@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="sign_in_password" type="id" />
-    <item name="sign_in_email" type="id" />
-    <item name="sign_in_btn" type="id" />
-    <item name="sign_in_close_btn" type="id" />
-    <item name="sign_in_progressbar" type="id" />
-</resources>
