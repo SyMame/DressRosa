@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="examples">
+        <item>Articles Personalisés</item>
+        <item>Prix attrctifs</item>
+        <item>Variete de Produits</item>
+        <item>Produits Uniques</item>
+        <item>Articles Tendances</item>
+    </string-array>
+    <string-array name="methode_paiement">
+        <item>PayPal</item>
+        <item>CB</item>
+        <item>Especes</item>
+    </string-array>
+
+
+</resources>

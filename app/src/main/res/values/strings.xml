@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">DressRosa</string>
+
+    <string name="title_activity_registration">Registration</string>
+    <string name="dummy_button">Bouton factice</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="register">Register</string>
+    <string name="about_activity_title">A propos de DressRosa</string>
+    <string name="about_activity_description"><b> Notre application DressRosa vous permet de vous téleporter vers le meilleur monde de fashion ! </b></string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="login">Login</string>
+    <string name="wishlist">Favoris</string>
+    <string name="forgot">Mot de passe oublié</string>
+    <string name="register_now">Inscrivez_vous</string>
+    <string name="already_mem">Vous êtes déja membre?</string>
+    <string name="login_now">Se connecter</string>
+
+    <!--Éléments de navigation-->
+    <string name="home">Acceuil</string>
+    <string name="myprofile">Mon Profil</string>
+    <string name="myorders">My Orders</string>
+    <string name="send_password1">  </string>
+    <string name="send_password2">\n\n )</string>
+    <string name="select_category">Select Category</string>
+    <string name="registermail1">\n
+        T</string>
+    <string name="title_activity_process_order">ProcessOrder</string>
+    <string name="orderdetails">Votre commande sera prête à être retirer dans la date précisée dans la Facture. \n Veuillez vous présentez muni de ce code!</string>
+    <string name="cart">Panier</string>
+    <string name="logout">Se Deconnecter</string>
+    <string name="feedback">Avis</string>
+    <string name="aboutapp">A prosos de nous </string>
+    <string name="rate">Rate Us</string>
+    <string name="helpcentre">Nous contacter</string>
+    <string name="noconnection"> Se connecter a un reseau WIFI ou activer les donnees mobiles </string>
+    <string name="help">En cas de probleme veuillez nous conctater sur  : \n   dressrosa@team_help.fr\n\n Ou nous joindre au : \n     +33192912993 \n   +33187328832</string>
+
+    <string name="orders_placed"></string>
+    <string name="items_incart"></string>
+    <string name="my_profile">My Profile</string>
+    <string name="update_details">Mettre a jour mon profil</string>
+    <string name="update">Update</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="back">Back</string>
+
+
+
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">SUIVANT</string>
+    <string name="skip">PASSER</string>
+    <string name="start">OK</string>
+
+    <string name="slide_1_title">Produits exclusifs</string>
+    <string name="slide_1_desc">Obtenez des produits uniques et disponibles uniquement dans nos magasins!</string>
+
+    <string name="slide_2_title">Bon tarifs</string>
+    <string name="slide_2_desc">Des produits à des tarifs aussi abordables !</string>
+
+    <string name="slide_3_title">Hassle Free Payments</string>
+    <string name="slide_3_desc">With various pay options , you can easily pay in a minute !</string>
+
+    <string name="slide_4_title">Fast Delivery</string>
+    <string name="slide_4_desc">Blazing fast order delivery within time !</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+</resources>

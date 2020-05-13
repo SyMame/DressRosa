@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4FFFE"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.myEcom.MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/toolbarwrap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="@color/colorAccent"
+            android:gravity="left"
+            style="@style/CustomTheme"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:textColor="#171919"
+                android:id="@+id/appname"
+                android:textSize="28sp"
+                android:gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/app_name"
+                android:padding="5dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/notifintro"
+                    android:layout_width="28dp"
+                    android:layout_height="25dp"
+                    app:lottie_fileName="ripple.json"
+                    app:lottie_loop="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    app:lottie_autoPlay="true"
+                    android:onClick="Notifications"/>
+
+                <ImageView
+                    android:id="@+id/view_profile"
+                    android:layout_width="28dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="10dp"
+                    android:onClick="viewProfile"
+                    app:srcCompat="@drawable/profile" />
+
+                <ImageView
+                    android:id="@+id/cart"
+                    android:layout_width="28dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="15dp"
+                    android:onClick="viewCart"
+                    app:srcCompat="@drawable/cart" />
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:scrollbars="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarwrap">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                app:auto_cycle="true"
+                app:pager_animation="Default"
+                app:pager_animation_span="1100" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+                    <androidx.cardview.widget.CardView
+                        android:onClick="hommeActivity"
+                        style="@style/homegridcard"
+                        card_view:cardCornerRadius="@dimen/card_album_radius">
+
+                        <RelativeLayout
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/homme"
+                                style="@style/homegridimage"
+                                app:srcCompat="@drawable/h1" />
+
+                            <TextView
+                                style="@style/homegridtext"
+                                android:layout_below="@id/homme"
+                                android:text="Nouveauté HOMME" />
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        card_view:cardCornerRadius="@dimen/card_album_radius"
+                        android:onClick="chemisesActivity">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/chemise"
+                                style="@style/homegridimage"
+                                app:srcCompat="@drawable/ch" />
+
+                            <TextView
+                                android:layout_below="@id/chemise"
+                                android:text="Chemises"
+                                style="@style/homegridtext"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        card_view:cardCornerRadius="@dimen/card_album_radius"
+                        android:onClick="robesActivity">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/robe"
+                                app:srcCompat="@drawable/robe"
+                                style="@style/homegridimage" />
+
+                            <TextView
+                                android:layout_below="@id/robe"
+                                android:text="Robes"
+                                style="@style/homegridtext"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        card_view:cardCornerRadius="@dimen/card_album_radius"
+                        android:onClick="pantalonsActivity">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/pantalon"
+                                style="@style/homegridimage"
+                                app:srcCompat="@drawable/p6" />
+
+                            <TextView
+                                android:layout_below="@id/pantalon"
+                                android:text="Pantalons"
+                                style="@style/homegridtext"/>
+
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="10">
+
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        card_view:cardCornerRadius="@dimen/card_album_radius"
+                        android:onClick="combinaisonsActivity">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/combinaison"
+                                style="@style/homegridimage"
+                                app:srcCompat="@drawable/cc" />
+
+                            <TextView
+                                android:layout_below="@id/combinaison"
+                                android:text="Combinaisons"
+                                style="@style/homegridtext"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+                    <androidx.cardview.widget.CardView
+                        style="@style/homegridcard"
+                        card_view:cardCornerRadius="@dimen/card_album_radius"
+                        android:onClick="pullsActivity">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/pull"
+                                style="@style/homegridimage"
+                                app:srcCompat="@drawable/pulls" />
+
+                            <TextView
+                                android:layout_below="@id/pull"
+                                android:text="Pulls"
+                                style="@style/homegridtext"/>
+
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:background="@color/dot_light_screen3"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:weightSum="10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:padding="5dp"
+                    style="@style/headingfonts"
+                    android:textColor="@color/gen_black"
+                    android:text="DressRosa"
+                    android:layout_weight="4"/>
+
+                <com.tomer.fadingtextview.FadingTextView
+                    android:layout_width="wrap_content"
+                    android:textColor="#ecf0f1"
+                    app:timeout="500"
+                    style="@style/headingfonts"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    app:texts="@array/examples"
+                    android:layout_weight="7"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
