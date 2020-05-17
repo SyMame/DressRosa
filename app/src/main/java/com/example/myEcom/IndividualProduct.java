@@ -205,4 +205,4 @@ public class IndividualProduct extends AppCompatActivity {
             finish();
         }
     }
-}
+} 
